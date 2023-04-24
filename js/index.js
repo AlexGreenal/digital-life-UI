@@ -1,4 +1,5 @@
 var flag = true;
+var isDark = false;
 			
 function isWeChat() {
 	var userAgent = navigator.userAgent.toLowerCase();
