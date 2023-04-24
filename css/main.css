@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+ font-family: 'menlo';
+ src: url('fonts/Menlo-Bold.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+*{
+	border: 0;
+	margin: 0;
+}
+body{
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+}
+.main { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.errorVideo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+}
+#video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.ui{
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+	width: calc(100% - 3rem);
+	height: calc(100% - 1.5rem);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.upper{
+	display: flex;
+	width: 100%;
+	height: 10%;
+}
+.iconView{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left:0.5rem ;
+	color: white;
+}
+.dinfoView{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding-left:0.5rem ;
+}
+.minfoView{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding-left:0.5rem ;
+}
+.einfoView{
+	width: 10%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding-left:0.5rem ;
+}
+.ninfoView{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding-left:0.5rem ;
+}
+.upperBar, .downBar{
+	width: 100%;
+	height: 1%;
+}
+.mid{
+	width: 100%;
+	height: 76%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.detailList{
+	width: 17%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.userList{
+	width: 15%;
+	height: 100%;
+}
+.down{
+	width: 100%;
+	height: 12%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.timeBar{
+	display: flex;
+	width: 100%;
+	height: 60%;
+}
+.controlBtn{
+	display: flex;
+	width: 4rem;
+	height: 100%;
+}
+.time{
+	display: flex;
+	width: 30%;
+	height: 100%;
+	justify-content: flex-start;
+	align-items: baseline;
+	font-size: 3rem;
+	padding-left: 1rem;
+}
+.mrinfoView{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding-left:0.5rem ;
+}
+.mcinfoView{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	padding-left:0.5rem ;
+}
+.volumeBar{
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+progress{
+	width: 100%;
+	height: 90%;
+	background:rgba(255, 255, 255, .6);
+	border: 0;
+	-webkit-appearance: none;
+}
+progress::-ms-fill{
+
+background:rgba(255, 255, 255, 1);
+
+}
+
+progress::-moz-progress-bar{
+
+background:rgba(255, 255, 255, .6);
+
+}
+
+progress::-webkit-progress-bar{
+
+background:rgba(255, 255, 255, .6);
+
+}
+
+progress::-webkit-progress-value{
+
+background:rgba(255, 255, 255,1);
+
+}
