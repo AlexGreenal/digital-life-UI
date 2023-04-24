@@ -151,6 +151,12 @@ window.onload = function () {
 		document.getElementById("deviceInfo3").innerHTML = "EXPLORER OPTIMAL LOSS";
 	}
 	
+	if(isWeChat()){
+		document.getElementById("deviceInfo").innerHTML = "WEIXIN RESOURCE USAGE";
+		document.getElementById("deviceInfo2").innerHTML = "WEIXIN MEMORY USAGE";
+		document.getElementById("deviceInfo3").innerHTML = "WEIXIN OPTIMAL LOSS";
+	}
+	
 	//访问用户媒体设备的兼容方法
 	function getUserMedia(constraints, success, error) {
 		if (navigator.mediaDevices.getUserMedia) {
