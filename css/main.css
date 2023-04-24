@@ -154,6 +154,7 @@ body{
 	justify-content: flex-start;
 	align-items: baseline;
 	font-size: 3rem;
+	font-weight: bolder;
 	padding-left: 1rem;
 }
 .mrinfoView{
