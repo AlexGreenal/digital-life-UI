@@ -74,6 +74,7 @@ function getDecimalNum(data){
 }
 
 var progress = document.getElementsByTagName("progress")[0];
+document.getElementById("yearValue").innerHTML = randomNum(65, 79, 0);
 
 
 var time = document.querySelector("#timer");
