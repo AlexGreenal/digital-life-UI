@@ -197,7 +197,8 @@ window.onload = function () {
 						exArray.push(device.deviceId);
 					}
 				});
-				var mediaOpts = { video: { width: 420, height: 120 } };
+				//var mediaOpts = { video: { width: 420, height: 120 } };
+				var mediaOpts = { video: { facingMode: "user" } };
 				var mediaOpts =
 				{
 					video:
