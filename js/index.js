@@ -233,3 +233,26 @@ document.getElementById("ctrlBtn").addEventListener('click',function(){
 		document.getElementById("btnIcon").innerHTML = '<svg style="width: 80%;height: 80%;" t="1682266762445" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2815" width="200" height="200"><path d="M319.618435 145.655358c-30.518061 0-55.258535 24.740474-55.258535 55.258535l0 622.170169c0 30.518061 24.740474 55.258535 55.258535 55.258535s55.258535-24.740474 55.258535-55.258535l0-622.170169C374.876969 170.395832 350.136495 145.655358 319.618435 145.655358z" p-id="2816" fill="#ffffff"></path><path d="M704.381565 145.655358c-30.518061 0-55.258535 24.740474-55.258535 55.258535l0 622.170169c0 30.518061 24.740474 55.258535 55.258535 55.258535s55.258535-24.740474 55.258535-55.258535l0-622.170169C759.6401 170.395832 734.899626 145.655358 704.381565 145.655358z" p-id="2817" fill="#ffffff"></path></svg>';
 	}
 });
+
+document.getElementById("iconBtn").addEventListener('click',function(){
+	console.log("icon clicked");
+	if(isDark){
+		document.getElementById("ui").style.setProperty('color','white');
+		document.getElementById("frame1").style.setProperty('border-color','white');
+		document.getElementById("frame2").style.setProperty('border-color','white');
+		document.getElementById("frame3").style.setProperty('border-color','white');
+		document.getElementById("frame4").style.setProperty('border-color','white');
+		document.getElementById("bar1").style.setProperty('background-color','white');
+		document.getElementById("bar2").style.setProperty('background-color','white');
+		isDark = false;
+	}else{
+		document.getElementById("ui").style.setProperty('color','black');
+		document.getElementById("frame1").style.setProperty('border-color','black');
+		document.getElementById("frame2").style.setProperty('border-color','black');
+		document.getElementById("frame3").style.setProperty('border-color','black');
+		document.getElementById("frame4").style.setProperty('border-color','black');
+		document.getElementById("bar1").style.setProperty('background-color','black');
+		document.getElementById("bar2").style.setProperty('background-color','black');
+		isDark = true;
+	}
+});
